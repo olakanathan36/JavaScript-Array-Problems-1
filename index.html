@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        // program 1 -create initialize
+
+        let array=[];
+        let n=5;
+        array[0]=2;
+        array[1]=3;
+        array[2]=4;
+        array[3]=5;
+        
+        document.write(array)
+        
+        // program2-manipulation
+        let array1=[1,2,3,4,5];
+        //add
+        array1.push(6);
+        array1.unshift(0);
+        document.write(array1)
+        //remove
+        array1.pop()
+        array1.shift()
+        document.write(array1)
+        
+        // program3-array search
+
+        let array4=[1,2,3,4,5,6];
+        let search=4;
+        let index=array4.indexOf(search);
+        document.write(index)
+        
+        // program 4-filter 
+
+        let array5=[1,2,4,5,6,7,8,10];
+
+        for(let m=0;m<array5.length;m++){
+            if(array5[m]%2==0){
+                document.write(array5[m]+" ")
+            }
+        }
+        document.write(array5)
+
+        // program5-mapping
+
+        let array6=[34,45,67,354,23,2];
+        let array7=array6.map(function(x){
+            return x*41
+        });
+        document.write(array7)
+
+        // program6-reverse
+
+        let array8=[1,2,3,4,5,6,7,8];
+        let array9=array8.reverse();
+        document.write(array9)
+        // sort 
+        document.write(array9.sort())
+
+        // program7-max & min
+
+        let arr =(a,b)=>(a*b);
+        document.write(arr(2,3));
+        let ar=[34,345,365,34234,234];
+        let max=0;
+        for(let e=0;e<ar.length;e++){
+            if(ar[e]>max){
+                max=ar[e]
+            }
+        }
+        document.write(max);
+        for(let e=0;e<ar.length;e++){
+            if(ar[e]<max){
+                max=ar[e]
+            }
+        }
+        document.write(max);
+
+        document.write()
+
+        // program8-merge array
+
+        let a1=[1,3,4,546,787,56];
+        let a2=[54,75,34,24,232,3];
+        let a3=a1.concat(a2);
+        document.write(a3);
+
+        // program 9-
+
+    </script>
+</body>
+</html>
